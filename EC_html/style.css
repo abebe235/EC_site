@@ -1,0 +1,534 @@
+@charaset="UTF-8" ;
+
+body {
+    background: #cee7ba ;
+    font-family: 'Hiragino Mincho ProN';
+    color: #5a5a5a ;
+    line-height: 2;
+}
+
+/*タイトルなどに関わる部分*/
+.header {
+    position: relative;
+    width: 1000px ;
+    height: 250px ;
+    margin: 0 auto ;
+}
+
+.header ul li {
+    font-family: 'arial' ;
+    font-weight: bold ;
+}
+
+.gift {
+    position: absolute ;
+    top: 0 ;
+    left: -80px ;
+}
+
+.gift :hover {
+    opacity: 0.5 ;
+}
+
+.logo img{
+    height: 150px ;
+    position: absolute ;
+    text-align: center ;
+    top: 50px ;
+    left: 430px
+}
+
+.logo img:hover{
+    opacity: 0.7 ;
+}
+
+.login {
+    position: absolute ;
+    width: 60px ;
+    height: 32px ;
+    top:166px ;
+    right: 200px ;
+    background: #5a5a5a ;
+    color: #fff ;
+    font-size: 13px ;
+    font-family:'arial' ;     
+    text-align: center ;
+    line-height: 32px ;
+}
+
+.login:hover {
+    opacity: 0.5 ;
+}
+
+.cart {
+    position: absolute ;
+/*
+    width: 60px ;
+    height: 30px ;
+*/
+    top:152px ;
+    right: 100px ;
+    text-align: center ;
+    line-height: 30px ;
+}
+
+.cart:hover {
+    opacity: 0.5 ;
+}
+
+.header ul {
+    height: 200px ;
+/*    padding-top: 120px ;*/
+    display: flex ;
+    flex-direction: column ;
+    justify-content: flex-end ;
+}
+
+.header ul li {
+    align-self: flex-end;
+    font-size: 10px ;
+}
+/*タイトルなどに関わる部分ここまで*/
+
+/*メニュー*/
+.nav {
+    width: 1000px ;
+    height: 50px ;
+    margin: 0 auto ;
+    border-top: solid 1px #c3c3c3 ;
+    border-bottom: solid 1px #c3c3c3 ;
+}
+.nav ul {
+    display: flex ;
+    justify-content:space-around ; 
+}
+.nav ul li {
+    width: 100px ;
+    height: 50px ;
+    text-align: center ;
+    line-height: 50px ;
+/*    font-family: 'Book Antiqua' ; ここをロゴの字体と合わせる*/
+}
+/*メニューここまで*/
+
+/*mainに関わる部分*/
+.main {
+    width: 1000px ;
+    height: 100% ;
+    margin: 0 auto ;
+}
+.top_ph img{
+    width: 1000px ;
+    height: 385px ;
+    margin-top: 20px ;
+}
+
+.top_ph a:hover{
+    opacity: 0.5 ;
+}
+
+.about {
+    width: 1000px ;
+    height: 427px ;
+    background: #fff ;
+    margin-top: 100px ;
+    margin-bottom: 100px ;
+}
+
+.about figure.left {
+    width: 500px ;
+    height: 427px ;
+    float: left ;
+}
+
+.about .right {
+    width: 420px ;
+    height: 427px ;
+    text-align: center ;
+    float: right ;
+    padding: 20px ;
+    font-size: 90% ;
+}
+
+.about .right h2 {
+    margin: 20px ;
+    color: #000 ;
+    font-size: 20px ;
+}
+
+.shop {
+    clear: both ;
+    width: 1000px ;
+    height: 730px ;
+    background: #fff ;
+    text-align: center ;
+    margin-bottom: 100px ;
+}
+
+.shop h2 {
+    color: firebrick ;
+    margin:10px 0 ;
+    font-size: 20px ;
+    font-family: 'arial' ;
+}
+
+/*検索フォームのデザイン*/
+#form_seach {
+    position: relative;
+    top: 40px ;
+    left: 28px ;
+    background-color: white ;
+    width: 300px ;
+    height: 30px ;
+    border: 1px #c0c0c0 solid ;
+}
+
+#form_seach input {
+    vertical-align: top ;
+    margin: 0px ;
+    height: 100% ;
+    box-sizing: border-box ;
+    background-color: transparent ;
+}
+
+#input_seach {
+    width: 250px ;
+    padding: 10px ;
+    border: none ;
+    border-right: 1px #c0c0c0 solid ;
+}
+
+#submit_seach {
+    width: 50px ;
+    border: none ;
+}
+/*検索フォームのデザインここまで*/
+
+.shop ul li{
+    margin-top: 30px ;  
+}
+
+.shop ul li img {
+    margin: 10px ;
+    border: 20px #fff solid ;
+}
+
+/*
+.shop figure img {
+    border: 1px #cee7ba solid ;
+}
+*/
+
+
+.gallary {
+    width: 980px ;
+    height: 314px ;
+    text-align: center ;
+    margin-bottom: 100px ;
+}
+
+.gallary ul li img {
+    margin: 10px ;
+    border: 20px #fff solid ;
+}
+
+.blog {
+    width: 1000px ;
+    height: 470px ;
+    background: #fff ;
+    margin-bottom: 100px ;
+}
+
+.blog .left {
+    width: 500px ;
+    float: left ; 
+    margin: 20px ;
+}
+
+.blog figure.right {
+    width: 436px ;
+    float:right ;
+    margin: 50px 10px ;
+}
+
+.news {
+    clear: both ;
+    width: 1000px ;
+    height: 472px ;
+    background: #fff ;
+    margin-bottom: 100px ;
+    padding: 10px ;
+    overflow: auto;
+}
+
+.news dl {
+/*    background: aqua ;*/
+}
+.news dl dt {
+    color: firebrick ;
+    margin: 10px 0 ;
+}
+
+.sns {
+    width: 1000px ;
+    height: 96px ;
+/*    background: #b0dd8c ;*/
+    display: flex ;
+    align-items: center;
+}
+
+.sns ul li{
+    margin: 16px ;
+    align-self: center;
+}
+/*
+.sns .btn{
+  display: inline-block;
+  text-decoration: none;
+  background: #5a5a5a;
+  color: #FFF;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  transition: .4s;
+    font-family: 'arial' ;
+    font-size: 30px ;
+}
+*/
+.sns.btn:hover{
+    opacity: 0.5 ;
+}
+
+.main ul {
+    display: flex ;
+    justify-content: center ;
+    list-style: none ;
+}
+
+/*main部分ここまで*/
+
+/*footerに関わる部分*/
+.footer {
+    width: 1000px ;
+    height: 88px ;
+}
+
+.footer ul {
+    display: flex ;
+    justify-content: flex-start ;
+    margin-bottom: 30px ;
+}
+
+.footer ul li {
+    height: 16px ;
+    font-size: 12px ;
+    margin-right: 25px ;
+}
+
+.footer ul li:nth-child(6) {
+/*    background: aqua ;*/
+    margin-left: auto ;
+}
+
+.footer p {
+    font-size: 10px ;
+    color: firebrick ;
+}
+/*footerここまで*/
+
+/*リンクに関する一括設定*/
+a:link{
+    color: #5a5a5a ;
+    text-decoration: none ;
+}
+
+a:visited{ 
+    color: #5a5a5a ;
+    text-decoration: none ;
+}
+
+a:hover{ 
+    color: #c3c3c3;
+    text-decoration: none; 
+}
+
+a:active{ 
+    color: #c3c3c3;
+    text-decoration: none; 
+}
+
+/*リンクに関する設定ここまで*/
+
+h1 {
+    font-size: 20px ;
+    text-align: center ;
+    margin: 10px ;
+    letter-spacing: 5px ;
+    font-style: italic ;
+}
+
+/*メニュー代わりの写真に関わる設定*/
+ul li img:hover{
+    opacity: 0.5 ;
+}
+
+ul li {
+    list-style: none ;
+}
+/*メニュー代わりの写真に関わる設定*/
+
+/*HELLOボタン*/
+.floating {
+    position: fixed;
+/*
+    width: 200px ;
+    height: 110px ;
+*/
+    bottom: 30px; 
+    right: 20px;
+    text-decoration: none ;
+    z-index: 1 ;
+    border: none ;
+    background: none ;
+}
+/*HELLOボタンここまで*/
+
+
+
+/*ここから下はgoods.htmlの設定*/
+
+.goods-main {
+    width:1000px ;
+    height: 1240px ;
+    margin: 0 auto ;
+}
+
+.goods-about {
+    width: 900px ;
+    height: 950px ;
+    padding: 70px 50px ;
+    background: #fff ;
+    margin: 50px 0 80px ;
+}
+
+.goods-about ul.goods-img {
+    width: 500px ;
+    float: left ;
+    text-align: center ;
+}
+
+.goods-about ul.goods-info {
+    width: 340px ;
+    height: 370px ;
+    float: right ;
+    padding-left: 50px ; 
+}
+
+.goods-about ul.goods-info li:nth-child(1) {
+/*    background: aqua ;*/
+    font-size: 20px ;
+    margin-bottom: 30px ;
+    color: black ;
+    font-family: 'arial' ;
+}
+
+#text {
+    width: 30px ;
+    text-align: center ;
+}
+
+/*
+.goods-about ul.goods-information li:nth-child(n+2) {
+} 
+*/
+
+.goods-about ul.goods-info li:nth-child(7) {
+    width: 325px ;
+    height: 55px ;
+    margin: 30px 0 20px ;
+    color: #fff ;
+    background: #de2020 ;
+    font-family: 'arial' ;
+    font-size: 20px ;
+    text-align: center ;
+    line-height: 55px ;
+    
+}
+.goods-about ul.goods-info li:nth-child(7):hover {
+    opacity: 0.5 ;
+}
+
+.goods-about ul.goods-info li:nth-child(8) {
+    width: 325px ;
+    height: 55px ;
+    margin-bottom: 30px ;
+    color: #000 ;
+    background: #fff ;
+    border: 1px #ccc solid ;
+    font-family: 'arial' ;
+    font-size: 20px ;
+    text-align: center ;
+    line-height: 55px ;
+}
+.goods-about ul.goods-info li:nth-child(8):hover {
+    opacity: 0.5 ;
+}
+
+.goods-about ul.goods-info li:nth-child(9){
+    font-size: 70% ;
+    font-family: 'arial' ;
+}
+
+.goods-about h2 {
+    clear: both ;
+/*    background: aqua ;*/
+    margin-top: 550px ;
+    color: #000 ;
+    font-family: 'arial' ;
+}
+
+.goods-about ul.goods-info2 {
+    display: flex ;
+}
+
+ul.goods-info2 li{
+    align-self: flex-end ;
+}
+
+ul.goods-info2 img {
+    width: 300px ;
+}
+
+.goods-title {
+    width: 1000px ;
+    margin: 10px auto ;
+    color: #000 ;
+    text-align: left ;
+    font-size: 100% ;
+    font-family: 'arial' ;
+    font-style: normal ;
+}
+
+.goods-view {
+    width: 1000px ;
+    height: 70px ;
+    background: #fff ;
+    line-height: 70px ;
+    margin-bottom: 10px ;
+}
+
+ .goods-view ul {
+     display: flex ;
+     justify-content: space-between ;
+     padding: 0 20px ;
+}
+
+.goods-view ul li input {
+    width: 230px ;
+    height: 30px ;
+}
+
